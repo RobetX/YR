@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Background with Click Events</title>
+    <style>
+        body {
+            background-image: url('https://j.top4top.io/p_3204402ma0.jpg'); /* Ganti dengan URL foto kalian */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Handwritten, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: none; /* Mulai dengan tidak terlihat */
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+      <audio controls>
+               <source src="https://i.top4top.io/m_3156sz8k80.mp4" type="audio/mpeg">
+    </audio>
+    <!-- Halaman Utama -->
+    <div id="main-container" class="container visible">
+        <button class="btn" id="btn1">Klik biar ga kepo</button>
+    </div>
+
+    <!-- Halaman Gambar -->
+    <div id="photo-container" class="container">
+        <img src="https://f.top4top.io/p_3217bfz0k0.jpg" alt="Photo 2"> <!-- Ganti dengan URL foto kedua -->
+        <button class="btn" id="btn2">Klik yh sayang.</button>
+    </div>
+
+    <!-- Halaman Pesan -->
+    <div id="message-container" class="container">
+        <p>semoga apa yang kita inginkan tercapai. semoga kita di berikan kesehtan dan kelncaran.</p>
+  
+   </p>
+  
+   
+   BY ROBET XD
+  
+    </div>
+    
+  
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function() {
+            document.getElementById("main-container").classList.remove("visible");
+            document.getElementById("photo-container").classList.add("visible");
+        });
+
+        document.getElementById("btn2").addEventListener("click", function() {
+            document.getElementById("photo-container").classList.remove("visible");
+            document.getElementById("message-container").classList.add("visible");
+        });
+    </script>
+
+</body>
+</html>
